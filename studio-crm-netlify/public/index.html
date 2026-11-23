@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111c37"><meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Studio CRM">
+  <link rel="icon" type="image/svg+xml" href="/icon.svg"><link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/style.css"><link rel="stylesheet" href="/extra.css">
+  <title>Studio CRM</title>
+</head>
+<body>
+  <div id="login" hidden class="login-body"><div class="login-wrap"><div class="login-mark">◈</div><form class="login-card" id="login-form"><span class="eyebrow">STUDIO CRM</span><h1>Добре дошъл<span class="accent-dot">.</span></h1><p>Управлявай клиентите, проектите и финансите си от едно място.</p><label for="login-password">Парола</label><input id="login-password" name="password" type="password" autocomplete="current-password" required autofocus><button class="button primary full" type="submit">Влез в Studio CRM →</button><div class="field-error" id="login-error" hidden></div></form><div class="login-footer">Личен CRM · Само за теб</div></div></div>
+  <div id="app" hidden>
+    <aside class="sidebar"><a href="#/" class="brand"><span class="brand-mark">▣</span><span><strong>studio<span class="brand-accent">.</span>crm</strong><small>Твоето работно място</small></span></a><div class="nav-caption">РАБОТНО ПРОСТРАНСТВО</div><nav class="side-nav" id="side-nav"></nav><div class="sidebar-spacer"></div><div class="sidebar-note"><span class="note-emoji">✦</span><strong>По-малко администрация.<br>Повече снимане.</strong><span>Всичко важно на едно място.</span></div><button class="logout-btn" data-action="logout">Изход ↗</button></aside>
+    <div class="app-shell"><header class="topbar"><div class="topbar-brand"><span class="mobile-logo">s<span>.</span></span><span class="topbar-label">STUDIO CRM</span></div><div class="topbar-right"><span class="today-pill" id="today-pill"></span><div class="avatar">S</div></div></header><main class="main-content" id="view"></main></div>
+    <nav class="bottom-nav" id="bottom-nav"></nav>
+  </div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
