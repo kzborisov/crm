@@ -12,3 +12,6 @@ button:disabled{opacity:.55;cursor:wait}.alert{border-radius:10px;background:#ff
 @media(max-width:700px){.page-heading .heading-actions{flex-wrap:wrap}.page-heading .heading-actions .button{flex:1}.quick-nav{margin-top:10px}.settings-grid{grid-template-columns:1fr}}
 .stage-pill.completed{color:#4f6384;background:#e8edf4}
 .nav-link .icon img{filter:brightness(0) invert(70%)}.nav-link.active .icon img{filter:brightness(0) invert(100%)}.bottom-link .icon img{filter:brightness(0) invert(70%)}.bottom-link.active .icon img{filter:invert(40%) sepia(69%) saturate(1456%) hue-rotate(219deg)}
+
+/* Keep small inline SVG icons crisp across mobile and desktop. */
+.mini-icon svg{width:16px;height:16px;display:block}
