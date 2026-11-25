@@ -1,6 +1,6 @@
 const NAV = [
   ['dashboard','#/','Обзор','grid'],['clients','#/clients','Клиенти','users'],
-  ['projects','#/projects','Проекти','layers'],['finance','#/finance','Финанси','chart'],['settings','#/settings','Още','settings']
+  ['ai-leads','/ai-leads.html','AI клиенти','users'],['projects','#/projects','Проекти','layers'],['finance','#/finance','Финанси','chart'],['settings','#/settings','Още','settings']
 ];
 const STAGES={lead:'Запитване',contact:'Разговор',offer:'Оферта',confirmed:'Потвърден',completed:'Завършен',lost:'Отказан'};
 const TYPES=['Еднократно видео','Reels пакет','Месечен абонамент','Събитие','Спортно събитие','Продуктово видео','Друго'];
