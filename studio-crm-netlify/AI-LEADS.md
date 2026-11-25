@@ -6,4 +6,4 @@
 4. Disable the separate ChatGPT scheduled lead report if you no longer want it. API charges are separate from ChatGPT. Set project usage alerts and review API and Netlify usage; the count is capped at 10 per run.
 5. AI leads have a separate private Netlify Blob; existing CRM JSON exports do not include the AI inbox. Approved clients are included in the usual export. Review source links and outreach manually. No outreach is sent automatically.
 
-The background worker uses the existing server-side session secret for internal calls. Branch preview calls require Netlify URL to refer to the intended site; do not test a preview with production credentials or shared production data. This version does not include automated follow-up or message regeneration.
+The background worker uses the existing server-side session secret for internal calls and prefers DEPLOY_PRIME_URL. Netlify Blobs are site-wide: use an isolated staging site with separate credentials for end-to-end tests, not the live site's branch preview. A normal branch preview is suitable for visual inspection only. This version does not include automated follow-up or message regeneration.
